@@ -24,6 +24,7 @@ def download_hd_track(search_query, output_folder="music/downloads"):
             'preferredquality': '320',  # Forces standard high-fidelity 320kbps compression
         }],
         'quiet': False,
+        'cookiefile': 'cookies.txt'
     }
     
     search_string = f"ytsearch1:{search_query}"
@@ -44,4 +45,4 @@ def download_hd_track(search_query, output_folder="music/downloads"):
 
 if __name__ == "__main__":
     # Quick test run query
-    download_hd_track("Dil hai chota sa")
+    download_hd_track("mango flame")

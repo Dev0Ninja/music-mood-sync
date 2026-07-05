@@ -1,0 +1,8 @@
+# Ignore the music downloads folder
+music/downloads/
+music/archive/
+# ⚠️ CRITICAL SECURITY WARNING: NEVER UPLOAD COOKIES ONLINE
+cookies.txt
+
+# Optional: Ignore the virtual environment if you created one
+.venv/
