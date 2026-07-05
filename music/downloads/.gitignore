@@ -1,0 +1,6 @@
+# Ignore the music downloads folder
+music/downloads/
+music/archive/
+
+# Optional: Ignore the virtual environment if you created one
+.venv/
