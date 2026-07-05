@@ -26,8 +26,10 @@ def download_hd_track(search_query, output_folder="music/downloads"):
         'quiet': False,
         'cookiefile': 'cookies.txt'
     }
-    
-    search_string = f"ytsearch1:{search_query}"
+    if search_query.strip().startswith("http"):
+        search_string = search_query.strip()
+    else:
+        search_string = f"ytsearch1:{search_query}"
     print(f"\n🔍 Agent searching database for: '{search_query}'...")
     
     with YoutubeDL(ydl_opts) as ydl:
@@ -45,4 +47,4 @@ def download_hd_track(search_query, output_folder="music/downloads"):
 
 if __name__ == "__main__":
     # Quick test run query
-    download_hd_track("mango flame")
+    download_hd_track("https://www.youtube.com/watch?v=8gkXwQQoU8g")
