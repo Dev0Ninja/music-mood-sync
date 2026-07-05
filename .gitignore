@@ -6,3 +6,8 @@ cookies.txt
 
 # Optional: Ignore the virtual environment if you created one
 .venv/
+# 🛑 NEW RULES: Python & OS Generated Cache Blocks
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
